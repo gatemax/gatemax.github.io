@@ -1,65 +1,84 @@
-<!-- file name: index.html-->
-<!-- Sophia's Bootstrap 5 practice-->
+
+<!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <title> Sophia Web1 Practice </title>
+<head>
+    <!-- Cmd / to comment  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sophia Self Practice</title>
 
-  <!-- Bootstrap core CSS -->
+    <!-- link all pages to same css file to create uniform styling -->
+
+    <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script defer src="bootstrap.bundle.min.js"></script>
-    <script defer src="index.js"></script>
+    <!-- <link href="style.css" rel="stylesheet"> -->
 
-  </head>
-    <body>
-        <div>
-        <p id="text-1" class="button"> Text 1 practice </p>
-        <p id="text-2" class="button"> Text 2 practice </p>
-        </div>
+    <!-- Using Bootstrap with global CDN via jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-        <div>
-        <img src="gatemax-logo.png" class="img-fluid" alt="gatemax-logo">
-        </div>
+</head>
+<body>
+    <p> hello world</p>
 
-        <!-- placed to header with Defer function -->
-        <!-- <script src="/Users/leungsophia/Desktop/Bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>-->
-        <!-- <script src="index.js"></script>-->
+    <div>
+        <p>This is a new paragraph. Note that this is put within a div tag</p>
+        <p>This is a <strong>strong</strong> tag.</p>
+        <p>This is an <em>emphasize</em> tag.</p>
+        <p>This is a <small>small </small>tag.</p>
+        <p>This is a hyperlink "a" tag with href</p>
+        <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjkxMjvpZX3AhVBNKYKHRjrB54QPAgI">Google website</a>
+        <p> this is a hyperlink to another site via relative path</p>
+        <a href="aboutus.html">About Us</a>
+        <a href="csspractice.html">CSS Practice</a>
+        <a href="form.html">Form Practice</a>
+    </div>
 
-        <!-- Experimenting Nav Bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Clients
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Registration</a></li>
-                      <li><a class="dropdown-item" href="#">Log In</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav> 
+    <div>
+        <p>Note that these are put within a div tag </p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p>Compare heading to paragraph</p>
+    </div>
 
-    </body>
+    <div>
+        <ul>This is an unordered list
+            <li>note how items are formatted in bullets</li>
+            <li>bullet 2</li>
+            <li>bullet 3</li>
+        </ul>
 
+        <ol>This is an ordered list 
+            <li>note how items are numbered</li>
+            <li>numbered item 2</li>
+            <li>numbered item 3</li>
+        </ol>
+    </div>
+
+    <!-- more tag examples -->
+    <div>
+    <span>I am a span tag </span>
+    <p> This sentence is seperated by a <br>br break tag</p>
+    <p> The following line is made with a hr horizontal line tag</p>
+    <hr>
+
+    <!-- insert images with img tag
+    link source with src attribute 
+    add alt attribute for accessibility purposes 
+    it will not show visually on website   -->
+    <img src="img/news1.png" alt="Hong Kong news1">
+    <!-- blockquote citation -->
+    <blockquote cite="https://www.townandcountrymag.com/leisure/arts-and-culture/reviews/a2382/best-oscar-wilde-quotes/">
+        "We are all in the gutter but some of us are looking at the stars"
+    </blockquote>
+
+    <p style="color:blue; font-size: xx-large;"> style me with adjusting p > style attributes</p>
+    </div>
+</body>
 </html>
-
-
